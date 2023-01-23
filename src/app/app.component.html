@@ -1,0 +1,13 @@
+<div class="container py-5">
+  <h1 class="text-center">
+    HACIENDO USO DE NUESTRA API
+  </h1>
+  <div>
+    <button class=" btn btn-outline-dark border rounded shadow" (click)="mostrar()">Peticion al API</button>
+  </div>
+  <ul *ngFor="let x of datos" class="lista py-1 px-5 my-3">
+    <li><span class="userdats">Nombre:</span> {{x.name}} 
+      <ul><span class="userdats">Username:</span> {{x.username}}</ul>
+    </li>
+  </ul>
+</div>
